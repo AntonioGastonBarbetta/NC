@@ -1,0 +1,32 @@
+.main {
+height: 100%;  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 60px auto   30px;
+  gap: 30px 30px;
+  grid-template-areas:
+    "header header"
+    "form table"
+    "footer footer";
+
+
+    :first-child{
+        grid-area: header;
+    }
+
+    :nth-child(2){
+        grid-area: form;
+        }
+
+
+    :nth-child(3){
+        grid-area: table;
+        justify-self: center;
+    }
+
+    :last-child{
+        grid-area: footer;
+    }
+
+
+}
